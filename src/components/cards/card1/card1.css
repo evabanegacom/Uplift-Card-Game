@@ -1,0 +1,18 @@
+.DealHand__cards-card1 {
+    background: var(--text-color);
+    border-radius: 10px;
+    height: 141px;
+    width: 103px;
+    margin: 0 20px 20px 0;
+  }
+  
+  .DealHand__card-text {
+      font-family: var(--card-font);
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 40px;
+      text-align: center;
+      color: var(--card-header);
+      width: 25%;
+      margin: 10px 0 10px 10px;
+  }

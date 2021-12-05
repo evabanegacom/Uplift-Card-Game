@@ -3,7 +3,7 @@ import { Winner, DealHand, Loser } from './components';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App flex justify-evenly">
       <DealHand />
       <Winner />
       <Loser />

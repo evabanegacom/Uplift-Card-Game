@@ -2,7 +2,7 @@ import React from 'react'
 
 const Loser = () => {
   return (
-    <div>
+    <div className='Loser'>
       loser
     </div>
   )

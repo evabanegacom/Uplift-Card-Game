@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Courier+Prime:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 @tailwind base;
@@ -7,11 +8,22 @@
 
 :root {
   --font-family: 'Manrope', sans-serif;
-  --card-font: 'Courier', 'Prime';
+  --card-font: Courier Prime;
+  --text-color: #fff;
+  --button-font: Alfa Slab One;
   
   --color-bg: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), #0A863E;
   --card-header : #000000;
   --color-heart: #F64242;
   --button-text: #EFCE4B;
   --winner-subtext: #ED973E;
+}
+
+.Winner,
+.Loser,
+.DealHand {
+  background:  var(--color-bg);
+  width: 414px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
 }

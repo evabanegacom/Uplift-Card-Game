@@ -2,7 +2,7 @@ import React from 'react'
 
 const Winner = () => {
     return (
-        <div>
+        <div className='Winner'>
            winner 
         </div>
     )
