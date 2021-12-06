@@ -11,15 +11,12 @@
     font-family: var(--card-font);
     font-weight: bold;
     font-size: 48px;
-    line-height: 54px;
-    text-align: center;
-    margin-top: 15px;
+    line-height: 54px;   
     color: var(--text-color);
 }
 
 .Winner__card-details {
     display: flex;
-    border: 1px solid red;
     margin-top: -30px;
     align-items: center;
 }
@@ -81,128 +78,3 @@
     margin-top: 50px;
     color: var(--button-text);
 }
-  
-  .ribbon {
-    width: 350px;
-    height: 60px;
-    margin: -50px auto 0px;
-    position: relative;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    background: #ED973E;
-    
-    -webkit-animation: main 250ms;
-    -moz-animation: main 250ms;
-    -ms-animation: main 250ms;
-    animation: main 250ms;
-  }
-  
-  .ribbon i {
-    position: absolute;
-  }
-  
-  .ribbon i:first-child, .ribbon i:nth-child(2) {
-    position: absolute;
-    left: -20px;
-    bottom: -20px;
-    z-index: -1;
-    border: 20px solid transparent;
-    border-right-color: #043140;
-    -webkit-animation: edge 500ms;
-    -moz-animation: edge 500ms;
-    -ms-animation: edge 500ms;
-    animation: edge 500ms;
-  }
-  
-  .ribbon i:nth-child(2) {
-    left: auto;
-    right: -20px;
-    border-right-color: transparent;
-    border-left-color: #043140;
-  }
-  
-  .ribbon i:nth-child(3), .ribbon i:last-child {
-    width: 20px;
-    bottom: -20px;
-    left: -40px;
-    border: 30px solid #ED973E;
-    border-left-color: transparent;
-    
-    -webkit-animation: back 600ms;
-    -moz-animation: back 600ms;
-    -ms-animation: back 600ms;
-    animation: back 600ms;
-    
-    -webkit-transform-origin: 100% 0;
-    -moz-transform-origin: 100% 0;
-    -ms-transform-origin: 100% 0;
-    transform-origin: 100% 0;
-  }
-  
-  .ribbon i:last-child {
-    bottom: -20px;
-    left: auto;
-    right: -40px;
-    border: 30px solid #1D53C0;
-    border-right-color: transparent;
-  
-    -webkit-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    transform-origin: 0 0;
-  }
-  
-  p {
-    text-align: center;
-    color: #aaa;
-  }
-  
-  /* animations */
-  
-  @-webkit-keyframes main {
-    0% { -webkit-transform: scaleX(0); }
-    100% { -webkit-transform: scaleX(1); }
-  }
-  
-  @-webkit-keyframes edge {
-    0%, 50% { -webkit-transform: scaleY(0); }
-    100% { -webkit-transform: scaleY(1); }
-  }
-  
-  @-webkit-keyframes back {
-    0%, 75% { -webkit-transform: scaleX(0); }
-    100% { -webkit-transform: scaleX(1); }
-  }
-  
-  
-  @-moz-keyframes main {
-    0% { -moz-transform: scaleX(0); }
-    100% { -moz-transform: scaleX(1); }
-  }
-  
-  @-moz-keyframes edge {
-    0%, 50% { -moz-transform: scaleY(0); }
-    100% { -moz-transform: scaleY(1); }
-  }
-  
-  @-moz-keyframes back {
-    0%, 75% { -moz-transform: scaleX(0); }
-    100% { -moz-transform: scaleX(1); }
-  }
-  
-  
-  @keyframes main {
-    0% { transform: scaleX(0); }
-    100% { transform: scaleX(1); }
-  }
-  
-  @keyframes edge {
-    0%, 50% { transform: scaleY(0); }
-    100% { transform: scaleY(1); }
-  }
-  
-  @keyframes back {
-    0%, 75% { transform: scaleX(0); }
-    100% { transform: scaleX(1); }
-  }
