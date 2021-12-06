@@ -29,7 +29,7 @@
 }
 
 .Loser__cards {
-    margin-top: 70px;
+    margin-top: 157px;
 }
 
 .Loser__deal {
@@ -38,7 +38,7 @@
     font-size: 24px;
     line-height: 27px;
     text-align: center;
-
+    margin-top: 50px;
     color: var(--text-color);
 }
 
@@ -61,6 +61,6 @@
     font-size: 24px;
     line-height: 33px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
     color: var(--button-text);
 }
