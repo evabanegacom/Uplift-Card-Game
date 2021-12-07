@@ -1,9 +1,11 @@
 import React from 'react';
 import '../card1/card1.css';
+import Fade from 'react-reveal/Fade';
 
 const Card2 = () => {
     return (
         <>
+        <Fade left cascade>
             <div className='DealHand__cards-card1'>
                 <div className='DealHand__card-text text-primary card2'><p>7</p>
                     <div>
@@ -20,6 +22,7 @@ const Card2 = () => {
 
                 </div>
             </div>
+            </Fade>
         </>
     )
 }

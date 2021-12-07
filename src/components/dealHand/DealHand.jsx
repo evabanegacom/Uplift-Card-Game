@@ -33,7 +33,8 @@ const DealHand = () => {
           setCount(count-2)
         }
 
-        if(count === 0){
+        if(count == 0){
+          console.log(count)
           return
         }
   }
