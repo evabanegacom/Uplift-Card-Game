@@ -2,12 +2,12 @@ import React from 'react';
 import './card2.css';
 import Fade from 'react-reveal/Fade';
 
-const Card2 = () => {
+const Card2 = ({ card2 }) => {
     return (
         <>
         <Fade left cascade>
             <div className='SecondCard__cards-card1'>
-                <div className='SecondCard__card-text text-primary card2'><p>7</p>
+                <div className='SecondCard__card-text text-primary card2'><p>{ card2}</p>
                     <div>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.509277 11.6931C3.71749 9.70985 5.96223 8.08043 7.24348 6.80483C8.52472 5.52924 10.0733 3.38207 11.8893 0.363339C13.8897 3.41639 15.5696 5.61965 16.9291 6.97315C18.2886 8.32664 20.402 9.89997 23.2693 11.6931C20.3224 13.784 18.1509 15.5244 16.7548 16.9143C15.3588 18.3042 13.7369 20.3404 11.8893 23.0229C10.2071 20.3628 8.60042 18.2705 7.06918 16.746C5.53795 15.2215 3.35131 13.5372 0.509277 11.6931Z" fill="#F64242" />

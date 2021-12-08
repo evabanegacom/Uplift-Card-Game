@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import './card1.css';
 import Fade from 'react-reveal/Fade';
 
-const Card1 = () => {
+const Card1 = ({ card1}) => {
   
   return (
     <>
     <Fade bottom cascade>
       <div className='DealHand__cards-card1'>
-        <div className='DealHand__card-text card1'><p>A</p>
+        <div className='DealHand__card-text card1'><p>{card1}</p>
           <div className='svg'>
             <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5053 0.613647C13.3997 2.14912 15.424 3.47865 16.5781 4.60224C18.5266 6.49928 20.1615 8.81256 20.1615 11.6208C20.1615 14.2253 19.1566 15.8156 16.5781 16.1235C14.9281 16.3205 12.9991 15.3501 10.7913 13.2122C10.7906 13.2896 10.7903 13.3679 10.7903 13.447C10.7903 14.9693 10.9095 16.8765 11.1478 19.1685H9.74341C9.96894 16.5132 10.0817 14.6061 10.0817 13.447L10.0815 13.4165C8.21356 15.4118 6.44126 16.3141 4.76461 16.1235C2.05671 15.8156 0.848999 14.3056 0.848999 11.6208C0.848999 8.77622 2.75752 6.51189 4.76461 4.60224C5.9211 3.5019 7.83465 2.17237 10.5053 0.613647Z" fill="black" />

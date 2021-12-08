@@ -8,7 +8,7 @@ import Card4 from '../../cards/card4/Card4';
 import Card5 from '../../cards/card5/Card5';
 import './board.css';
 
-const Board = ({ cardChange, count }) => {
+const Board = ({ cardChange, count, card1, card2, card3, card4, card5 }) => {
   return (
     <div className='Board flex flex-col'>
       <div className='Board__card-header'>
@@ -16,11 +16,11 @@ const Board = ({ cardChange, count }) => {
         <div className='Board__card-details'>cards Left</div>
       </div>
       <div className='Board__cards flex justify-center'>
-        <Card1 />
-        <Card2 />
-        <Card3 />
-        <Card4 />
-        <Card5 />
+        <Card1 card1={card1}/>
+        <Card2 card2={card2} />
+        <Card3 card3={card3} />
+        <Card4 card4={card4} />
+        <Card5 card5={card5} />
       </div>
       <DealButton cardChange={cardChange}/>
       <ResetButton />

@@ -9,7 +9,7 @@ import './dealHand.css';
 import DealButton from '../buttons/dealButton/DealButton';
 import ResetButton from '../buttons/resetButton/resetButton';
 
-const DealHand = ({ cardChange, count }) => {
+const DealHand = ({ cardChange, count, card1, card2, card3, card4, card5 }) => {
   return (
     <div className='DealHand flex flex-col'>
       <div className='DealHand__card-header'>
@@ -18,11 +18,11 @@ const DealHand = ({ cardChange, count }) => {
       </div>
       <div className='flex flex-wrap justify-center DealHand__cards'>
         <LightSpeed>
-        <Card1 />
-        <Card2 />
-        <Card3 />
-        <Card4 />
-        <Card5 />
+        <Card1 card1={card1}/>
+        <Card2 card2={card2} />
+        <Card3 card3={card3}/>
+        <Card4 card4={card4} />
+        <Card5 card5={card5}/>
         </LightSpeed>
       </div>
       <DealButton cardChange={cardChange}/>
