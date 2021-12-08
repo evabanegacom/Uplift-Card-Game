@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './card1.css';
 import Fade from 'react-reveal/Fade';
 
 const Card1 = () => {
+  
   return (
     <>
     <Fade bottom cascade>

@@ -1,0 +1,39 @@
+.Board {
+  background: var(--color-bg);
+  width: 1440px;
+  height: 1024px;
+}
+
+.Board__card-header {
+    width: 180px;
+    height: 112px;
+    margin: 50px auto 0;
+    background: var(--card-header);
+    border: 1px solid #fff48c;
+    box-sizing: border-box;
+}
+
+.Board__card-number {
+    font-family: var(--card-font);
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 54px;
+    text-align: center;
+    margin-top: 15px;
+    color: var(--text-color);
+  }
+  
+  .Board__card-details {
+    width: 120px;
+    font-family: var(--card-font);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    width: 100%;
+    color: var(--text-color);
+  }
+
+  .Board__cards {
+  margin-top: 70px;
+  }
