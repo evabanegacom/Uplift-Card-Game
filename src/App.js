@@ -29,11 +29,13 @@ const App = () => {
       setCount(count - 2)
     }
 
-    if (count == 0) {
+    if (count === 0) {
       console.log(count)
       return
     }
+    return
   }
+
   return (
     <div className="App">
       <DealHand 

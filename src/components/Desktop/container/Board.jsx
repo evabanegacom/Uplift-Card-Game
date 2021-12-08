@@ -27,7 +27,7 @@ const Board = ({ cardChange, count, card1, card2, card3, card4, card5 }) => {
         <Card5 card5={card5} />
         </Flash>
       </div>
-      <DealButton cardChange={cardChange}/>
+      <DealButton count={count} cardChange={cardChange}/>
       <ResetButton />
     </div>
   )
