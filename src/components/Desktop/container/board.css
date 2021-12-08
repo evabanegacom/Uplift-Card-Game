@@ -1,7 +1,6 @@
 .Board {
   background: var(--color-bg);
   width: 1440px;
-  height: 1024px;
 }
 
 .Board__card-header {

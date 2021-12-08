@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LightSpeed from 'react-reveal/LightSpeed';
+import Flash from 'react-reveal/Flash';
 import Card1 from '../cards/card1/Card1';
 import Card2 from '../cards/card2/Card2';
 import Card3 from '../cards/card3/Card3';
@@ -17,13 +17,13 @@ const DealHand = ({ cardChange, count, card1, card2, card3, card4, card5 }) => {
         <div className='DealHand__card-details'>cards Left</div>
       </div>
       <div className='flex flex-wrap justify-center DealHand__cards'>
-        <LightSpeed>
+        <Flash spy={count}>
         <Card1 card1={card1}/>
         <Card2 card2={card2} />
         <Card3 card3={card3}/>
         <Card4 card4={card4} />
         <Card5 card5={card5}/>
-        </LightSpeed>
+        </Flash>
       </div>
       <DealButton cardChange={cardChange}/>
       <ResetButton />

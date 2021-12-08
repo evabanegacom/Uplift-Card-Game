@@ -12,11 +12,13 @@ const App = () => {
   const [cardContentFive, setContentFive] = useState('4')
 
   const cardChange = () => {
+    setTimeout(()=>{
       setContentOne(arr[Math.floor(Math.random() * arr.length)]);
       setContentTwo(arr[Math.floor(Math.random() * arr.length)]);
       setContentThree(arr[Math.floor(Math.random() * arr.length)]);
       setContentFour(arr[Math.floor(Math.random() * arr.length)]);
       setContentFive(arr[Math.floor(Math.random() * arr.length)]);
+    }, 700)
 
     console.log(document.querySelector('.card1 p'))
     if (count > 0) {
