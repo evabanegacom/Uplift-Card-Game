@@ -121,6 +121,7 @@ const reset = () => {
        reset={reset}
        winnerCheck={winnerCheck}
        loserCheck={loserCheck}
+       changeLeaf={changeLeaf} 
        />
       <Board count={count} reset={reset} aceCount={aceCount} cardChange={cardChange}
       card1={cardContentOne}

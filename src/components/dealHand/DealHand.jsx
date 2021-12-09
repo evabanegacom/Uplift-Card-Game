@@ -10,7 +10,7 @@ import banner from './Assets/Banner.svg'
 import DealButton from '../buttons/dealButton/DealButton';
 import ResetButton from '../buttons/resetButton/resetButton';
 
-const DealHand = ({ loserCheck, winnerCheck, reset, aceCount, cardChange, count, card1, card2, card3, card4, card5 }) => {
+const DealHand = ({ changeLeaf, loserCheck, winnerCheck, reset, aceCount, cardChange, count, card1, card2, card3, card4, card5 }) => {
   return (
     <div className='DealHand flex flex-col'>
       <div className='DealHand__card-header'>
@@ -21,7 +21,7 @@ const DealHand = ({ loserCheck, winnerCheck, reset, aceCount, cardChange, count,
       <div>{winnerCheck()}</div>
       <div className='flex flex-wrap justify-center DealHand__cards'>
         {count >= 5 ? <Flash spy={count}>
-          <Card1 card1={card1} />
+          <Card1 changeLeaf={changeLeaf} card1={card1} />
           <Card2 card2={card2} />
           <Card3 card3={card3} />
           <Card4 card4={card4} />
