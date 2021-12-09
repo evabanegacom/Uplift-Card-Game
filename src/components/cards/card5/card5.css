@@ -24,4 +24,18 @@
     width: 192px;
     height: 264px;
   }
+
+  .FifthCard__card-text{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .FifthCard__card-text svg{
+    margin-top: 20px;
+  }
+
+  .FifthCard__bigSVG {
+    margin-top: 80px;
+  }
 }

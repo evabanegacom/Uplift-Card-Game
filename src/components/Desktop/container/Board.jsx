@@ -18,6 +18,7 @@ const Board = ({ loserCheck, winnerCheck, aceCount, cardChange, reset, count, ca
       </div>
       <div className='text-dark text-center'>{aceCount} Aces Left</div>
       <div className='flex justify-center'>{winnerCheck()}</div>
+      {/* <div className='flex justify-center'>{loserCheck()}</div> */}
       <div className='Board__cards flex justify-center'>
         { count >=7 ?<Flash spy={count}>
           <Card1 card1={card1} />
@@ -31,10 +32,15 @@ const Board = ({ loserCheck, winnerCheck, aceCount, cardChange, reset, count, ca
           <Card1 card1={card1} />
           <Card2 card2={card2} />
           </Flash>
+          ||
+          <Flash spy={count}>
+          <Card3 card3={card3} />
+          <Card4 card4={card4} />
+          </Flash>
            ||
            <Flash spy={count}>
-           <Card3 card3={card3} />
-           <Card4 card3={card4} />
+           <Card4 card4={card4} />
+           <Card3 card5={card5} />
            </Flash>
      }
       </div>
@@ -43,8 +49,8 @@ const Board = ({ loserCheck, winnerCheck, aceCount, cardChange, reset, count, ca
       </div>) :
         <DealButton count={count} cardChange={cardChange} />
       }
-      <div>{loserCheck}</div>
-      <ResetButton aceCount={aceCount} count={count} reset={reset} />
+      <div>{loserCheck()}</div>
+      <div className='Board__button-div'><ResetButton aceCount={aceCount} count={count} reset={reset} /></div>
     </div>
   )
 }

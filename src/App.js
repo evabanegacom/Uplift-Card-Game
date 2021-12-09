@@ -4,7 +4,7 @@ import { DealHand, Board } from './components';
 import banner from './Assets/Banner.svg';
 
 const App = () => {
-  const arr = ['A', 'B', 'C', 'D', 'E', 'K', 'J', '4', '9', '6', '1', '5', '7', 'ACE', 'Q'];
+  const arr = ['A', 'B', 'C', 'D', 'E', 'K', 'J', '4', '9', '6', '1', '5', '7', 'Q', 'ACE'];
   const [count, setCount] = useState(52);
   const [cardContentOne, setContentOne] = useState('A')
   const [cardContentTwo, setContentTwo] = useState('7')
@@ -21,25 +21,21 @@ const App = () => {
 
   const LoserElement = () => (
     <div className='Loser__deal'>
-        <p>Game Over.</p>
+        <p>You Lose..</p>
         <p>Better luck next time</p>
       </div>
   )
-  
+
   const winnerCheck = () => {
-    if(cardContentTwo === 'ACE' && count === 0) {
-      return <WinningElement />
-    }else if(cardContentTwo === 'ACE' && count === 0){
-      return <WinningElement />
-    }else if(cardContentThree === 'ACE' && count === 0){
-      return <WinningElement />
-    }else if(cardContentFour === 'ACE' && count === 0){
-      return <WinningElement />
-    }else if(cardContentFive === 'ACE' && count === 0){
+    if(count === 0) {
+      if(cardContentOne !== 'ACE' && cardContentTwo !== 'ACE' && cardContentThree !== 'ACE' && cardContentFour !== 'ACE' && cardContentFive !== 'ACE') {
+        return null
+    }else {
       return <WinningElement />
     }
-    return null
   }
+  return null
+}
 
   const acesCounts = () => {
     if(cardContentOne === 'ACE' && aceCount > 0) {
@@ -57,19 +53,15 @@ const App = () => {
   }
 
   const loserCheck = () => {
-      if(cardContentTwo !== 'ACE' && count === 0) {
+    if(count === 0) {
+      if(cardContentOne !== 'ACE' && cardContentTwo !== 'ACE' && cardContentThree !== 'ACE' && cardContentFour !== 'ACE' && cardContentFive !== 'ACE') {
         return <LoserElement />
-      }else if(cardContentTwo !== 'ACE' && count === 0){
-        return <LoserElement />
-      }else if(cardContentThree !== 'ACE' && count === 0){
-        return <LoserElement />
-      }else if(cardContentFour !== 'ACE' && count === 0){
-        return <LoserElement />
-      }else if(cardContentFive !== 'ACE' && count === 0){
-        return <LoserElement />
-      }
+    }else {
       return null
+    }
   }
+  return null
+}
 
   const cardChange = () => {
     setTimeout(()=>{
