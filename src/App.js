@@ -70,18 +70,24 @@ const App = () => {
       setContentThree(arr[Math.floor(Math.random() * arr.length)]);
       setContentFour(arr[Math.floor(Math.random() * arr.length)]);
       setContentFive(arr[Math.floor(Math.random() * arr.length)]);
-    }, 700)
+    }, 600)
 acesCounts()
     if (count > 0) {
-      setCount(count - 5)
+      setTimeout(() =>{
+        setCount(count - 5)
+      }, 1500)
     }
 
     if (count === 2) {
-      setCount(count - 2)
+      setTimeout(() =>{
+        setCount(count - 2)
+      }, 1500)
     }
 
     if (count === 0) {
+      setTimeout(() =>{
       console.log(count)
+    }, 1500)
       return
     }
   }
@@ -115,8 +121,6 @@ const reset = () => {
       winnerCheck={winnerCheck}
       loserCheck={loserCheck} 
       />
-      {/* <Winner />
-      <Loser /> */}
     </div>
   );
 }

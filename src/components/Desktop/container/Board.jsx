@@ -18,9 +18,8 @@ const Board = ({ loserCheck, winnerCheck, aceCount, cardChange, reset, count, ca
       </div>
       <div className='text-dark text-center'>{aceCount} Aces Left</div>
       <div className='flex justify-center'>{winnerCheck()}</div>
-      {/* <div className='flex justify-center'>{loserCheck()}</div> */}
       <div className='Board__cards flex justify-center'>
-        { count >=7 ?<Flash spy={count}>
+        { count >=5 ?<Flash spy={count}>
           <Card1 card1={card1} />
           <Card2 card2={card2} />
           <Card3 card3={card3} />

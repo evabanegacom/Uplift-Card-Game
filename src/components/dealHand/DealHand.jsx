@@ -20,24 +20,29 @@ const DealHand = ({ loserCheck, winnerCheck, reset, aceCount, cardChange, count,
       <div className='text-dark text-center'>{aceCount} Aces Left</div>
       <div>{winnerCheck()}</div>
       <div className='flex flex-wrap justify-center DealHand__cards'>
-      { count >=7 ?<Flash spy={count}>
+        {count >= 5 ? <Flash spy={count}>
           <Card1 card1={card1} />
           <Card2 card2={card2} />
           <Card3 card3={card3} />
           <Card4 card4={card4} />
           <Card5 card5={card5} />
         </Flash>
-        :
-        <Flash spy={count}>
-          <Card1 card1={card1} />
-          <Card2 card2={card2} />
+          :
+          <Flash spy={count}>
+            <Card1 card1={card1} />
+            <Card2 card2={card2} />
           </Flash>
           ||
           <Flash spy={count}>
-          <Card3 card3={card3} />
-          <Card4 card3={card4} />
+            <Card3 card3={card3} />
+            <Card4 card3={card4} />
           </Flash>
-     }
+          ||
+          <Flash spy={count}>
+            <Card4 card4={card4} />
+            <Card3 card5={card5} />
+          </Flash>
+        }
       </div>
       {aceCount === 0 || count === 0 ? (<div className='Loser__deal'>
         <p>Game Over.</p>
@@ -45,7 +50,7 @@ const DealHand = ({ loserCheck, winnerCheck, reset, aceCount, cardChange, count,
         <DealButton count={count} cardChange={cardChange} />
       }
 
-      <div>{loserCheck}</div>
+      <div>{loserCheck()}</div>
       <ResetButton aceCount={aceCount} count={count} reset={reset} />
     </div>
   )
