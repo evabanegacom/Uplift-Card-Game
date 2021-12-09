@@ -9,7 +9,7 @@ import Card4 from '../../cards/card4/Card4';
 import Card5 from '../../cards/card5/Card5';
 import './board.css';
 
-const Board = ({ loserCheck, winnerCheck, aceCount, cardChange, reset, count, card1, card2, card3, card4, card5 }) => {
+const Board = ({ changeLeaf, loserCheck, winnerCheck, aceCount, cardChange, reset, count, card1, card2, card3, card4, card5 }) => {
   return (
     <div className='Board flex flex-col'>
       <div className='Board__card-header'>
@@ -20,7 +20,7 @@ const Board = ({ loserCheck, winnerCheck, aceCount, cardChange, reset, count, ca
       <div className='flex justify-center'>{winnerCheck()}</div>
       <div className='Board__cards flex justify-center'>
         { count >=5 ?<Flash spy={count}>
-          <Card1 card1={card1} />
+          <Card1 changeLeaf={changeLeaf} card1={card1} />
           <Card2 card2={card2} />
           <Card3 card3={card3} />
           <Card4 card4={card4} />
@@ -28,7 +28,7 @@ const Board = ({ loserCheck, winnerCheck, aceCount, cardChange, reset, count, ca
         </Flash>
         :
         <Flash spy={count}>
-          <Card1 card1={card1} />
+          <Card1 changeLeaf={changeLeaf} card1={card1} />
           <Card2 card2={card2} />
           </Flash>
           ||
