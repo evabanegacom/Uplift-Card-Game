@@ -63,33 +63,34 @@ const App = () => {
   return null
 }
 
-  const cardChange = () => {
+const counters = () => {
+  setTimeout(() => {
+  if (count > 0) {
+    setCount(count - 5)
+  }
+  if (count === 2) {
+    setCount(count - 2)
+  }
+  if (count === 0) {
+    console.log(count)
+    return
+  }
+}, 1000)
+  return
+}
+
+
+  const cardChange = async () => {
+    counters()
     setTimeout(()=>{
       setContentOne(arr[Math.floor(Math.random() * arr.length)]);
       setContentTwo(arr[Math.floor(Math.random() * arr.length)]);
       setContentThree(arr[Math.floor(Math.random() * arr.length)]);
       setContentFour(arr[Math.floor(Math.random() * arr.length)]);
       setContentFive(arr[Math.floor(Math.random() * arr.length)]);
-    }, 600)
+    }, 700)
+
 acesCounts()
-    if (count > 0) {
-      setTimeout(() =>{
-        setCount(count - 5)
-      }, 1500)
-    }
-
-    if (count === 2) {
-      setTimeout(() =>{
-        setCount(count - 2)
-      }, 1500)
-    }
-
-    if (count === 0) {
-      setTimeout(() =>{
-      console.log(count)
-    }, 1500)
-      return
-    }
   }
 
 const reset = () => {
