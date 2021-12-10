@@ -9,7 +9,7 @@ import Card4 from '../../cards/card4/Card4';
 import Card5 from '../../cards/card5/Card5';
 import './board.css';
 
-const Board = ({ changeLeaf, loserCheck, winnerCheck, aceCount, cardChange, reset, count, card1, card2, card3, card4, card5 }) => {
+const Board = ({ changeStar, changeFlower, changeLeaf, loserCheck, winnerCheck, aceCount, cardChange, reset, count, card1, card2, card3, card4, card5 }) => {
   return (
     <div className='Board flex flex-col'>
       <div className='Board__card-header'>
@@ -21,25 +21,25 @@ const Board = ({ changeLeaf, loserCheck, winnerCheck, aceCount, cardChange, rese
       <div className='Board__cards flex justify-center'>
         { count >=5 ?<Flash spy={count}>
           <Card1 changeLeaf={changeLeaf} card1={card1} />
-          <Card2 card2={card2} />
-          <Card3 card3={card3} />
-          <Card4 card4={card4} />
-          <Card5 card5={card5} />
+          <Card2 changeFlower={changeFlower} card2={card2} />
+          <Card3 changeStar={changeStar} card3={card3} />
+          <Card4 changeLeaf={changeLeaf} card4={card4} />
+          <Card5 changeLeaf={changeLeaf} card5={card5} />
         </Flash>
         :
         <Flash spy={count}>
-          <Card1 changeLeaf={changeLeaf} card1={card1} />
-          <Card2 card2={card2} />
+          <Card1 changeLeaf={changeLeaf} changeLeaf={changeLeaf} card1={card1} />
+          <Card2 changeFlower={changeFlower} card2={card2} />
           </Flash>
           ||
           <Flash spy={count}>
-          <Card3 card3={card3} />
-          <Card4 card4={card4} />
+          <Card3 changeStar={changeStar} card3={card3} />
+          <Card4 changeLeaf={changeLeaf} card4={card4} />
           </Flash>
            ||
            <Flash spy={count}>
-           <Card4 card4={card4} />
-           <Card3 card5={card5} />
+           <Card4 changeLeaf={changeLeaf} card4={card4} />
+           <Card5 changeLeaf={changeLeaf} card5={card5} />
            </Flash>
      }
       </div>

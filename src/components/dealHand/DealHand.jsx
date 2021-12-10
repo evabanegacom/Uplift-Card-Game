@@ -6,11 +6,10 @@ import Card3 from '../cards/card3/Card3';
 import Card4 from '../cards/card4/Card4';
 import Card5 from '../cards/card5/Card5';
 import './dealHand.css';
-import banner from './Assets/Banner.svg'
 import DealButton from '../buttons/dealButton/DealButton';
 import ResetButton from '../buttons/resetButton/resetButton';
 
-const DealHand = ({ changeLeaf, loserCheck, winnerCheck, reset, aceCount, cardChange, count, card1, card2, card3, card4, card5 }) => {
+const DealHand = ({ changeStar, changeFlower, changeLeaf, loserCheck, winnerCheck, reset, aceCount, cardChange, count, card1, card2, card3, card4, card5 }) => {
   return (
     <div className='DealHand flex flex-col'>
       <div className='DealHand__card-header'>
@@ -22,25 +21,25 @@ const DealHand = ({ changeLeaf, loserCheck, winnerCheck, reset, aceCount, cardCh
       <div className='flex flex-wrap justify-center DealHand__cards'>
         {count >= 5 ? <Flash spy={count}>
           <Card1 changeLeaf={changeLeaf} card1={card1} />
-          <Card2 card2={card2} />
-          <Card3 card3={card3} />
-          <Card4 card4={card4} />
-          <Card5 card5={card5} />
+          <Card2 changeFlower={changeFlower} card2={card2} />
+          <Card3 changeStar={changeStar} card3={card3} />
+          <Card4 changeLeaf={changeLeaf} card4={card4} />
+          <Card5 changeLeaf={changeLeaf} card5={card5} />
         </Flash>
           :
           <Flash spy={count}>
-            <Card1 card1={card1} />
-            <Card2 card2={card2} />
+            <Card1 changeLeaf={changeLeaf} card1={card1} card1={card1} />
+            <Card2 changeFlower={changeFlower} card2={card2} />
           </Flash>
           ||
           <Flash spy={count}>
-            <Card3 card3={card3} />
-            <Card4 card3={card4} />
+            <Card3 changeStar={changeStar} card3={card3} />
+            <Card4 changeLeaf={changeLeaf} card3={card4} />
           </Flash>
           ||
           <Flash spy={count}>
-            <Card4 card4={card4} />
-            <Card3 card5={card5} />
+            <Card4 changeLeaf={changeLeaf} card4={card4} />
+            <Card5 changeLeaf={changeLeaf} card5={card5} />
           </Flash>
         }
       </div>
