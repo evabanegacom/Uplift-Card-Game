@@ -9,7 +9,7 @@ import './dealHand.css';
 import DealButton from '../buttons/dealButton/DealButton';
 import ResetButton from '../buttons/resetButton/resetButton';
 
-const DealHand = ({ changeStar, changeFlower, changeLeaf, loserCheck, winnerCheck, reset, aceCount, cardChange, count, card1, card2, card3, card4, card5 }) => {
+const DealHand = ({ changeLove, changeStar, changeFlower, changeLeaf, loserCheck, winnerCheck, reset, aceCount, cardChange, count, card1, card2, card3, card4, card5 }) => {
   return (
     <div className='DealHand flex flex-col'>
       <div className='DealHand__card-header'>
@@ -23,7 +23,7 @@ const DealHand = ({ changeStar, changeFlower, changeLeaf, loserCheck, winnerChec
           <Card1 changeLeaf={changeLeaf} card1={card1} />
           <Card2 changeFlower={changeFlower} card2={card2} />
           <Card3 changeStar={changeStar} card3={card3} />
-          <Card4 changeLeaf={changeLeaf} card4={card4} />
+          <Card4 changeLove={changeLove} card4={card4} />
           <Card5 changeLeaf={changeLeaf} card5={card5} />
         </Flash>
           :
@@ -34,11 +34,11 @@ const DealHand = ({ changeStar, changeFlower, changeLeaf, loserCheck, winnerChec
           ||
           <Flash spy={count}>
             <Card3 changeStar={changeStar} card3={card3} />
-            <Card4 changeLeaf={changeLeaf} card3={card4} />
+            <Card4 changeLove={changeLove} card3={card4} />
           </Flash>
           ||
           <Flash spy={count}>
-            <Card4 changeLeaf={changeLeaf} card4={card4} />
+            <Card4 changeLove={changeLove} card4={card4} />
             <Card5 changeLeaf={changeLeaf} card5={card5} />
           </Flash>
         }

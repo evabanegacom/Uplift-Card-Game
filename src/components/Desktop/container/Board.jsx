@@ -9,7 +9,7 @@ import Card4 from '../../cards/card4/Card4';
 import Card5 from '../../cards/card5/Card5';
 import './board.css';
 
-const Board = ({ changeStar, changeFlower, changeLeaf, loserCheck, winnerCheck, aceCount, cardChange, reset, count, card1, card2, card3, card4, card5 }) => {
+const Board = ({ changeLove, changeStar, changeFlower, changeLeaf, loserCheck, winnerCheck, aceCount, cardChange, reset, count, card1, card2, card3, card4, card5 }) => {
   return (
     <div className='Board flex flex-col'>
       <div className='Board__card-header'>
@@ -23,7 +23,7 @@ const Board = ({ changeStar, changeFlower, changeLeaf, loserCheck, winnerCheck, 
           <Card1 changeLeaf={changeLeaf} card1={card1} />
           <Card2 changeFlower={changeFlower} card2={card2} />
           <Card3 changeStar={changeStar} card3={card3} />
-          <Card4 changeLeaf={changeLeaf} card4={card4} />
+          <Card4 changeLove={changeLove} card4={card4} />
           <Card5 changeLeaf={changeLeaf} card5={card5} />
         </Flash>
         :
@@ -34,11 +34,11 @@ const Board = ({ changeStar, changeFlower, changeLeaf, loserCheck, winnerCheck, 
           ||
           <Flash spy={count}>
           <Card3 changeStar={changeStar} card3={card3} />
-          <Card4 changeLeaf={changeLeaf} card4={card4} />
+          <Card4 changeLove={changeLove} card4={card4} />
           </Flash>
            ||
            <Flash spy={count}>
-           <Card4 changeLeaf={changeLeaf} card4={card4} />
+           <Card4 changeLove={changeLove} card4={card4} />
            <Card5 changeLeaf={changeLeaf} card5={card5} />
            </Flash>
      }

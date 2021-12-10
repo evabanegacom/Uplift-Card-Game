@@ -34,6 +34,7 @@ const love = <svg width="49" height="40" viewBox="0 0 49 40" fill="none" xmlns="
   const [changeLeaf, setChangeLeaf] = useState(leaf)
   const [changeFlower, setChangeFlower] = useState(flower)
   const [changeStar, setChangeStar] = useState(star)
+  const [changeLove, setChangeLove] = useState(love)
 
   const WinningElement = () => (
     <div className='Winner__card-details'>
@@ -110,10 +111,11 @@ const counters = () => {
       setContentThree(arr[Math.floor(Math.random() * arr.length)]);
       setContentFour(arr[Math.floor(Math.random() * arr.length)]);
       setContentFive(arr[Math.floor(Math.random() * arr.length)]);
+      setChangeLeaf(leafFlower[Math.floor(Math.random() * leafFlower.length)]);
+      setChangeFlower(leafFlower[Math.floor(Math.random() * leafFlower.length)]);
+      setChangeStar(leafFlower[Math.floor(Math.random() * leafFlower.length)]);
+      setChangeLove(leafFlower[Math.floor(Math.random() * leafFlower.length)]);
     }, 700)
-    setChangeLeaf(leafFlower[Math.floor(Math.random() * leafFlower.length)]);
-    setChangeFlower(leafFlower[Math.floor(Math.random() * leafFlower.length)]);
-    setChangeStar(leafFlower[Math.floor(Math.random() * leafFlower.length)]);
 
 acesCounts()
   }
@@ -140,6 +142,7 @@ const reset = () => {
        changeLeaf={changeLeaf}
        changeFlower={changeFlower}
        changeStar={changeStar}
+       changeLove={changeLove}
        />
       <Board count={count} reset={reset} aceCount={aceCount} cardChange={cardChange}
       card1={cardContentOne}
@@ -152,6 +155,7 @@ const reset = () => {
       changeLeaf={changeLeaf}
       changeFlower={changeFlower}
       changeStar={changeStar}
+      changeLove={changeLove}
       />
     </div>
   );
