@@ -87,7 +87,6 @@ const love = <svg width="49" height="40" viewBox="0 0 49 40" fill="none" xmlns="
 }
 
 const counters = () => {
-  setTimeout(() => {
   if (count > 0) {
     setCount(count - 5)
   }
@@ -95,29 +94,31 @@ const counters = () => {
     setCount(count - 2)
   }
   if (count === 0) {
-    console.log(count)
     return
   }
-}, 1500)
   return
 }
 
+const cardItems = () => {
+  return setTimeout(()=>{
+    setContentOne(arr[Math.floor(Math.random() * arr.length)]);
+    setContentTwo(arr[Math.floor(Math.random() * arr.length)]);
+    setContentThree(arr[Math.floor(Math.random() * arr.length)]);
+    setContentFour(arr[Math.floor(Math.random() * arr.length)]);
+    setContentFive(arr[Math.floor(Math.random() * arr.length)]);
+    setChangeLeaf(leafFlower[Math.floor(Math.random() * leafFlower.length)]);
+    setChangeFlower(leafFlower[Math.floor(Math.random() * leafFlower.length)]);
+    setChangeStar(leafFlower[Math.floor(Math.random() * leafFlower.length)]);
+    setChangeLove(leafFlower[Math.floor(Math.random() * leafFlower.length)]);
+  }, 700)
+}
 
-  const cardChange = async () => {
-    counters()
+  const cardChange = () => {
+    cardItems()
     setTimeout(()=>{
-      setContentOne(arr[Math.floor(Math.random() * arr.length)]);
-      setContentTwo(arr[Math.floor(Math.random() * arr.length)]);
-      setContentThree(arr[Math.floor(Math.random() * arr.length)]);
-      setContentFour(arr[Math.floor(Math.random() * arr.length)]);
-      setContentFive(arr[Math.floor(Math.random() * arr.length)]);
-      setChangeLeaf(leafFlower[Math.floor(Math.random() * leafFlower.length)]);
-      setChangeFlower(leafFlower[Math.floor(Math.random() * leafFlower.length)]);
-      setChangeStar(leafFlower[Math.floor(Math.random() * leafFlower.length)]);
-      setChangeLove(leafFlower[Math.floor(Math.random() * leafFlower.length)]);
-    }, 700)
-
-acesCounts()
+    counters()
+    },1000)
+    acesCounts()
   }
 
 const reset = () => {
