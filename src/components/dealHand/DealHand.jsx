@@ -17,7 +17,7 @@ const DealHand = ({ changeLove, changeStar, changeFlower, changeLeaf, loserCheck
         <div className='DealHand__card-details'>cards Left</div>
       </div>
       <div className='text-dark text-center'>{aceCount} Aces Left</div>
-      <div>{winnerCheck()}</div>
+      <div>{winnerCheck}</div>
       <div className='flex flex-wrap justify-center DealHand__cards'>
         {count >= 5 ? <Flash spy={count}>
           <Card1 changeLeaf={changeLeaf} card1={card1} />
@@ -49,7 +49,7 @@ const DealHand = ({ changeLove, changeStar, changeFlower, changeLeaf, loserCheck
         <DealButton count={count} cardChange={cardChange} />
       }
 
-      <div>{loserCheck()}</div>
+      <div>{loserCheck}</div>
       <ResetButton aceCount={aceCount} count={count} reset={reset} />
     </div>
   )
