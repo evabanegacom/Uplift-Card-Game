@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './dealButton.css';
 
 const DealButton = ({ cardChange, count }) => {

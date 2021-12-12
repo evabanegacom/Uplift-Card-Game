@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Flash from 'react-reveal/Flash';
 import Card1 from '../cards/card1/Card1';
 import Card2 from '../cards/card2/Card2';
@@ -28,7 +28,7 @@ const DealHand = ({ changeLove, changeStar, changeFlower, changeLeaf, loserCheck
         </Flash>
           :
           <Flash spy={count}>
-            <Card1 changeLeaf={changeLeaf} card1={card1} card1={card1} />
+            <Card1 changeLeaf={changeLeaf} card1={card1} />
             <Card2 changeFlower={changeFlower} card2={card2} />
           </Flash>
           ||

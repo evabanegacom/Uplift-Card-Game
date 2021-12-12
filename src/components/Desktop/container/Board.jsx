@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import DealButton from '../../buttons/dealButton/DealButton';
 import ResetButton from '../../buttons/resetButton/resetButton';
 import Flash from 'react-reveal/Flash';
@@ -28,7 +28,7 @@ const Board = ({ changeLove, changeStar, changeFlower, changeLeaf, loserCheck, w
         </Flash>
         :
         <Flash spy={count}>
-          <Card1 changeLeaf={changeLeaf} changeLeaf={changeLeaf} card1={card1} />
+          <Card1 changeLeaf={changeLeaf} card1={card1} />
           <Card2 changeFlower={changeFlower} card2={card2} />
           </Flash>
           ||
