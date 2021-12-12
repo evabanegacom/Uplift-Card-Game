@@ -10,7 +10,7 @@ const Card1 = ({ card1, changeLeaf }) => {
     <>
     <Fade bottom cascade>
       <div className='DealHand__cards-card1'>
-        <div className='DealHand__card-text card1' style={styles}><p>{card1}</p>
+        <div className='DealHand__card-text card1' style={styles}><p id='card-paragraph'>{card1}</p>
           <div className='svg'>
             { changeLeaf }
           </div>

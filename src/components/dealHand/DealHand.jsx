@@ -16,7 +16,7 @@ const DealHand = ({ changeLove, changeStar, changeFlower, changeLeaf, loserCheck
         <div className='DealHand__card-number'>{count}</div>
         <div className='DealHand__card-details'>cards Left</div>
       </div>
-      <div className='text-dark text-center'>{aceCount} Aces Left</div>
+      <div className='text-dark text-center' id='aces'>{aceCount} Aces Left</div>
       <div>{winnerCheck}</div>
       <div className='flex flex-wrap justify-center DealHand__cards'>
         {count >= 5 ? <Flash spy={count}>

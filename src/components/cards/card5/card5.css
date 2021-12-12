@@ -16,11 +16,6 @@
       margin: 10px 0 10px 10px;
   }
 
-  .svg svg {
-    width: 21px;
-    height: 20px;
-  }
-
 @media only screen and (max-width: 1440px) and (min-width: 1024px) {
   .FifthCard__cards-card1 {
     background: #FFFFFF;

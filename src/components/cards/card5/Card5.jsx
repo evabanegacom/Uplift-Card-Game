@@ -2,26 +2,27 @@ import React from 'react';
 import './card5.css';
 import Fade from 'react-reveal/Fade';
 
-const Card5 = ({ card5, changeLeaf }) => {
-    const styles = {
-        color:  changeLeaf.props.children.props.fill
-      }
-    return (
-        <>
-        <Fade top cascade>
-            <div className='FifthCard__cards-card1'>
-                <div className='FifthCard__card-text card5' style={styles}><p>{card5}</p>
-                    <div className='svg'>
-                        { changeLeaf }
-                    </div>
-                </div>
-                <div className='FifthCard__bigSVG flex justify-center'>
-                    { changeLeaf}
-                </div>
+const Card5 = ({ card5 }) => {
+  return (
+    <>
+      <Fade top cascade>
+        <div className='FifthCard__cards-card1'>
+          <div className='FifthCard__card-text card5 text-midnight'><p>{card5}</p>
+            <div className='svg'>
+              <svg width="21" height="20" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.2292 0.306885C30.8954 0.306885 36.2995 5.40393 36.2995 11.6915C36.2995 13.2765 35.956 14.7859 35.3355 16.1571C35.6533 16.1315 35.9749 16.1188 36.2995 16.1188C42.9657 16.1188 48.3698 21.499 48.3698 28.1358C48.3698 34.7727 42.9657 40.1529 36.2995 40.1529C31.2879 40.1529 26.9897 37.1121 25.1647 32.7826L25.1647 32.6385C25.1647 36.8255 25.4882 42.071 26.135 48.3751H22.3233C22.9187 41.2715 23.2246 36.1146 23.2408 32.9044C21.3875 37.1692 17.1232 40.1529 12.1589 40.1529C5.49262 40.1529 0.088562 34.7727 0.088562 28.1358C0.088562 21.499 5.49262 16.1188 12.1589 16.1188C12.4834 16.1188 12.805 16.1315 13.1231 16.1566C12.5023 14.786 12.1589 13.2765 12.1589 11.6915C12.1589 5.40393 17.5629 0.306885 24.2292 0.306885Z" fill="black" />
+              </svg>
             </div>
-            </Fade>
-        </>
-    )
+          </div>
+          <div className='FifthCard__bigSVG flex justify-center'>
+            <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M24.2292 0.306885C30.8954 0.306885 36.2995 5.40393 36.2995 11.6915C36.2995 13.2765 35.956 14.7859 35.3355 16.1571C35.6533 16.1315 35.9749 16.1188 36.2995 16.1188C42.9657 16.1188 48.3698 21.499 48.3698 28.1358C48.3698 34.7727 42.9657 40.1529 36.2995 40.1529C31.2879 40.1529 26.9897 37.1121 25.1647 32.7826L25.1647 32.6385C25.1647 36.8255 25.4882 42.071 26.135 48.3751H22.3233C22.9187 41.2715 23.2246 36.1146 23.2408 32.9044C21.3875 37.1692 17.1232 40.1529 12.1589 40.1529C5.49262 40.1529 0.088562 34.7727 0.088562 28.1358C0.088562 21.499 5.49262 16.1188 12.1589 16.1188C12.4834 16.1188 12.805 16.1315 13.1231 16.1566C12.5023 14.786 12.1589 13.2765 12.1589 11.6915C12.1589 5.40393 17.5629 0.306885 24.2292 0.306885Z" fill="black" />
+            </svg>
+          </div>
+        </div>
+      </Fade>
+    </>
+  )
 }
 
 export default Card5

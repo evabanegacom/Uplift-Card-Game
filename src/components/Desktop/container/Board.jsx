@@ -16,7 +16,7 @@ const Board = ({ changeLove, changeStar, changeFlower, changeLeaf, loserCheck, w
         <div className='Board__card-number'>{count}</div>
         <div className='Board__card-details'>cards Left</div>
       </div>
-      <div className='text-dark text-center'>{aceCount} Aces Left</div>
+      <div className='text-dark text-center' id='aces'>{aceCount} Aces Left</div>
       <div className='flex justify-center'>{winnerCheck}</div>
       <div className='Board__cards flex justify-center'>
         { count >=5 ?<Flash spy={count}>
