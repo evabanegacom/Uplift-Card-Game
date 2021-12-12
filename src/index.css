@@ -19,11 +19,23 @@
   --winner-subtext: #ED973E;
 }
 
-.Winner,
-.Loser,
 .DealHand {
-  background:  var(--color-bg);
+  background: var(--color-bg);
   width: 414px;
-  margin-bottom: 50px;
   padding-bottom: 50px;
+  display: none;
+}
+
+.Board {
+  padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .DealHand {
+    display: flex;
+  }
+
+  .Board {
+    display: none;
+  }
 }

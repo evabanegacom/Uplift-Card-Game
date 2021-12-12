@@ -1,0 +1,15 @@
+
+.DealButton__deal {
+    background: var(--button-text);
+    border-radius: 14px;
+    width: 309px;
+    height: 103px;
+    margin: 60px auto 0;
+  }
+  
+  .DealButton__deal-text {
+    font-family: var(--button-font);
+    font-size: 64px;
+    line-height: 88px;
+    text-align: center;
+  }

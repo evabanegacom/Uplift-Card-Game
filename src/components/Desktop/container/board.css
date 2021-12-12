@@ -1,4 +1,9 @@
-.Loser__card-header {
+.Board {
+  background: var(--color-bg);
+  width: 1440px;
+}
+
+.Board__card-header {
     width: 180px;
     height: 112px;
     margin: 50px auto 0;
@@ -7,7 +12,7 @@
     box-sizing: border-box;
 }
 
-.Loser__card-number {
+.Board__card-number {
     font-family: var(--card-font);
     font-weight: bold;
     font-size: 48px;
@@ -15,9 +20,9 @@
     text-align: center;
     margin-top: 15px;
     color: var(--text-color);
-}
-
-.Loser__card-details {
+  }
+  
+  .Board__card-details {
     width: 120px;
     font-family: var(--card-font);
     font-weight: bold;
@@ -26,13 +31,13 @@
     text-align: center;
     width: 100%;
     color: var(--text-color);
-}
+  }
 
-.Loser__cards {
-    margin-top: 157px;
-}
+  .Board__cards {
+  margin-top: 70px;
+  }
 
-.Loser__deal {
+  .Loser__deal {
     font-family: var(--card-font);
     font-weight: normal;
     font-size: 24px;
@@ -40,27 +45,4 @@
     text-align: center;
     margin-top: 50px;
     color: var(--text-color);
-}
-
-.Loser__deal-text {
-    font-family: var(--button-font);
-    font-size: 64px;
-    line-height: 88px;
-    text-align: center;
-}
-
-.Loser__button {
-    border: 3px solid var(--button-text);
-    box-sizing: border-box;
-    border-radius: 14px;
-    width: 199px;
-    height: 50px;
-    align-self: center;
-
-    font-family: var(--button-font);
-    font-size: 24px;
-    line-height: 33px;
-    text-align: center;
-    margin-top: 60px;
-    color: var(--button-text);
 }

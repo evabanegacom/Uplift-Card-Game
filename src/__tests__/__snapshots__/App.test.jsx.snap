@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` tests for snapshot 1`] = `
+Array [
+  <div
+    class="DealHand__card-number"
+  >
+    52
+  </div>,
+  <div
+    class="Board__card-number"
+  >
+    52
+  </div>,
+]
+`;
+
+exports[` tests for snapshot 2`] = `
+Array [
+  <div
+    class="text-dark text-center"
+    id="aces"
+  >
+    4
+     Aces Left
+  </div>,
+  <div
+    class="text-dark text-center"
+    id="aces"
+  >
+    4
+     Aces Left
+  </div>,
+]
+`;

@@ -1,4 +1,4 @@
-.DealHand__cards-card1 {
+.FourthCard__cards-card1 {
     background: var(--text-color);
     border-radius: 10px;
     height: 141px;
@@ -6,7 +6,7 @@
     margin: 0 20px 20px 0;
   }
   
-  .DealHand__card-text {
+  .FourthCard__card-text {
       font-family: var(--card-font);
       font-weight: bold;
       font-size: 36px;
@@ -22,26 +22,26 @@
   }
 
 @media only screen and (max-width: 1440px) and (min-width: 1024px) {
-  .DealHand__cards-card1 {
+  .FourthCard__cards-card1 {
     background: #FFFFFF;
     border-radius: 24px;
-    transform: rotate(15deg);
+    transform: rotate(-7.5deg);
     width: 192px;
     height: 264px;
+    margin-top: 60px;
   }
 
-  .DealHand__card-text{
+  .FourthCard__card-text{
     display: flex; 
     flex-direction: column;
     align-items: center;
   }
 
-  .DealHand__card-text svg{
+  .FourthCard__card-text svg{
     margin-top: 20px;
   }
 
-  .DealHand__bigSVG {
+  .FourthCard__bigSVG {
     margin-top: 80px;
   }
-  
 }
